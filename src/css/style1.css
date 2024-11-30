@@ -1,0 +1,184 @@
+body{
+    margin: 0;
+    padding: 0;
+    display:block;
+}
+a{
+    color: rgb(50, 245, 50);
+}
+.more{
+    color: rgb(250, 37, 37);
+}
+header{
+    width: 100%;
+    border: 2px solid rgba(0, 10, 0, 0.9);
+    background: rgba(0, 10, 0, 0.9);
+}
+header .container{
+    width: 64%;
+    margin: 0 18%;
+}
+.container .branding{
+    line-height: 0;
+    padding: 1.1em;
+    padding-left: 0;
+    color: white;
+} 
+.branding p{
+    margin-left: 35%;
+    font-family: cursive;
+}
+.branding h1{
+    font-family:cursive;
+    font-size: 4em;
+}
+.branding h1 span{
+    color: rgba(255, 123, 0, 0.822);
+}
+#head_nav ul{
+    display: flex;
+    gap: 1.5%;
+    margin-left: 0; 
+    padding-left: 0; 
+}
+#head_nav li{
+    list-style: none;
+    background: rgb(50, 245, 50);
+    border-radius: 5px;
+    padding: 0.4em;
+}
+#head_nav li:first-child{
+    background: rgba(255, 123, 0, 0.822);
+}
+#head_nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-variant: small-caps;
+    padding: 0.4em;
+}
+#head_nav li:hover{
+    background: rgba(255, 123, 0, 0.822);
+}
+
+.sec1{
+    width: 64%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap:3% 5%;
+    margin: 1% 18% 3% 18%;
+}
+.sec1 h2{
+    color: rgb(50, 245, 50);
+}
+p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.post img{
+    width: 100%;
+    height: 120px;
+}
+.sidebar .sidebar-menu li, .sidebar .sponsors li{
+    list-style: none;
+}
+.sidebar .sidebar-menu a{
+    color: black;
+    text-decoration: none;
+}
+.sidebar .sidebar-menu a:hover{
+    color: rgb(50, 245, 50);
+}
+.sec2{
+    width: 100%;
+    border: 2px solid rgba(0, 10, 0, 0.9);
+    background: rgba(0, 10, 0, 0.9);
+    color: white;
+}
+.sec2 .container2{
+    width: 64%;
+    margin: 0 18%;
+    display: flex;
+    gap: 5%;
+}
+.container2 .bottom{
+    width: 35%;
+}
+.Gallery .images{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.container2 .images img{
+    width: 78px;
+    height: 66px;
+    margin: 1.5%;
+}
+.About img{
+    width: 78px;
+    height: 66px;
+    float: left;
+    margin: 1.5% 4% 0 0;
+}
+footer{
+    width: 100%;
+    border-top: 1px solid white;
+    background: rgba(0, 10, 0, 0.918);
+    color: white;
+}
+footer .container3{
+    width: 64%;
+    margin: 0 18%;
+    display: flex;
+    justify-content: space-between;
+}
+.container3 ul{
+    display: flex;
+    gap: 1vw;
+}
+.container3 li{
+    list-style: none;
+}
+.container3 li a{
+    text-decoration: none;
+    color: white;
+}
+.container3 li a:hover{
+    color: rgb(50, 245, 50);
+}
+@media (max-width: 1024px) {
+    header .container{
+        margin: 0 10%;
+    }
+    .sec1,
+    .sec2 .container2,
+    footer .container3{
+        width: 80%;
+        margin: 0 10%;
+    }
+}
+@media (max-width: 821px) {
+    header .container{
+        margin: 0 5%;
+    }
+    .sec1,
+    .sec2 .container2,
+    footer .container3{
+        width: 90%;
+        margin: 0 5%;
+    }
+    .container .branding{
+        padding: 0.6em;
+    }
+    .branding h1{
+        font-size: 2em;
+    }
+    .branding p{
+        font-size: 0.8em;
+    }
+    #head_nav li,
+    #head_nav a{
+        padding: 0.4em;
+        font-size: 0.8em;
+    }
+}
